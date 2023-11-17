@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Sistema de Login</h2>
+
+    <div class="form">
+        <form [formGroup]="formularioLogin" class="login-form">
+            <div class="row">
+                <input placeholder="Email*" type="email" class="form-control" formControlName="user">
+            </div>
+            <br>
+            <div class="row">
+                <input placeholder="Password*" id="pass" type="password" class="form-control"
+                    formControlName="password">
+            </div>
+            <br>
+            <button class="submit" (click)="iniciar()">continuar</button>
+        </form>
+    </div>
+</div>
